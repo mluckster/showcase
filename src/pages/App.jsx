@@ -1,11 +1,19 @@
 import './App.css';
-import Card from './components/Card'
+import Card from '../components/Card/Card'
+import Navbar from '../components/Navbar/Navbar'
+import { useState } from 'react';
+import textData from '../data/textData.json'
 
 export default function App() {
+    const [page, setPage] = useState(0)
+
     return (
         <div className="App">
+            <Navbar setPage = { setPage }/>
+            {
+            page ? 
             <>
-                < Card />
+            {/* about section */}
                 <div>
                     I'm using this showcase as a place to post weekly / bi-weekly projects to deepen my knowledge of 
                     coding + software development + computer science. I will be using this as a place to post my 
@@ -14,7 +22,7 @@ export default function App() {
                 </div>
 
                 <ul>
-                    Some ideas planned for the future:
+                    <li>Some ideas planned for the future:</li>
                     <li>Exercise Routine App</li>
                     <li>Chrome Extension to make twitch.tv only show the people you follow who are live</li>
                     <li>Chess Game</li>
@@ -22,6 +30,14 @@ export default function App() {
                     <li>2D javascript game</li>
                 </ul>
             </>
+            :
+            <>
+            {/* showcase section */}
+                { textData.map((item, index) => (
+                    < Card item={item} key={index} />
+                ))}
+            </>
+            }
         </div>
     );
 }

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Project 1",
+        "description": "This is the description for Project 1",
+        "technology": "React, Full Stack",
+        "image": ""
+    },
+    {
+        "id": 1,
+        "title": "Second Project",
+        "description": "Description for project 2",
+        "technology": "Django Full Stack, APIs",
+        "image": ""
+    }
+]
