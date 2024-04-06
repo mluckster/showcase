@@ -6,6 +6,12 @@ import textData from '../data/textData.json'
 
 export default function App() {
     const [page, setPage] = useState(0)
+    const [selectedCard, setSelectedCard] = useState(null)
+
+    function handleCardSelect(i){
+        setSelectedCard(i)
+        console.log(i)
+    }
 
     return (
         <div className="App">
@@ -32,10 +38,15 @@ export default function App() {
             </>
             :
             <>
-            {/* showcase section */}
-                { textData.map((item, index) => (
-                    < Card item={item} key={index} />
-                ))}
+                { selectedCard !== null ? 
+                < Card item={ textData[selectedCard] } />
+                :
+                textData.map((item, index) => (
+                    < Card item={item} key={index} onClick={(() => handleCardSelect(index))} />
+                ))
+
+                }
+
             </>
             }
         </div>

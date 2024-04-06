@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "title": "Project 1",
+        "title": "Minesweeper",
         "description": "This is the description for Project 1",
-        "technology": "React, Full Stack",
+        "technology": "Vanilla Javascript",
         "image": ""
     },
     {
