@@ -13,15 +13,15 @@ export default function Card ({ item }) {
             <div className='title'>
                 { item.title }
             </div>
-            { expand ?
+            { expand ? (
             <div className='description'>
                 <div>{ item.technology }</div>
                 <div>{ item.description }</div>
             </div>
-            :
+            ) : (
             <div>{ item.technology }</div>
 
-        }
+        )}
         </div>
     )
 }

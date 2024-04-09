@@ -7,7 +7,7 @@
         "image": ""
     },
     {
-        "id": 1,
+        "id": 2,
         "title": "Second Project",
         "description": "Description for project 2",
         "technology": "Django Full Stack, APIs",
