@@ -1,26 +1,32 @@
 import { useState } from 'react'
 import './Card.css'
 
-export default function Card ({ item }) {
+export default function Card ({ item, handleCardSelect, selectedCard }) {
     const [expand, setExpand] = useState(false)
+
+    function handleClick(e) {
+        console.log(selectedCard, 'selectedCard')
+        // handleExpand()
+        handleCardSelect(e.target.parentElement.id)
+    }
 
     function handleExpand(e){
         setExpand(!expand)
     }
 
     return (
-        <div onClick={handleExpand}>
+        <div onClick={handleClick} id={item.id}>
             <div className='title'>
                 { item.title }
             </div>
-            { expand ? (
-            <div className='description'>
-                <div>{ item.technology }</div>
-                <div>{ item.description }</div>
-            </div>
-            ) : (
-            <div>{ item.technology }</div>
 
+            { selectedCard ? (
+            <>
+                <div className='description'>{ item.technology }</div>
+                <div className='description'>{ item.description }</div>
+            </>
+            ) : (
+            <div className='description'>{ item.technology }</div>
         )}
         </div>
     )

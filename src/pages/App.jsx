@@ -8,10 +8,9 @@ export default function App() {
     const [page, setPage] = useState(0)
     const [selectedCard, setSelectedCard] = useState(null)
 
-    function handleCardSelect(i){
-        console.log('clicked')
-        console.log(i)
-        setSelectedCard(i)
+    function handleCardSelect(e){
+        console.log('clicked', selectedCard)
+        selectedCard ? setSelectedCard(null) : setSelectedCard(e)
     }
 
     return (
@@ -39,13 +38,20 @@ export default function App() {
             </>
             :
             <>  
-            {/* this needs to be changed a bit - I can't use on click on the Card component */}
-                {selectedCard !== null ? 
-                    <Card item={textData.find(item => item.id === selectedCard)} onClick={handleCardSelect} />
-                    :
+                { selectedCard != null ?
+                <>
+                    {
+                        <Card item={textData.find((item) => item.id == selectedCard)} handleCardSelect={handleCardSelect} /> 
+                    }
+                </>
+                :
+                <>
+                    {    
                     textData.map((item, index) => (
-                        <Card item={item} key={index} onClick={() => handleCardSelect(item.id)} />
+                        <Card item={item} key={index} handleCardSelect={handleCardSelect} selectedCard={selectedCard} />
                     ))
+                    }
+                </>
                 }
             </>
             }
