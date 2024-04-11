@@ -6,12 +6,6 @@ import textData from '../data/textData.json'
 
 export default function App() {
     const [page, setPage] = useState(0)
-    const [selectedCard, setSelectedCard] = useState(null)
-
-    function handleCardSelect(e){
-        console.log('clicked', selectedCard)
-        selectedCard ? setSelectedCard(null) : setSelectedCard(e)
-    }
 
     return (
         <div className="App">
@@ -37,23 +31,14 @@ export default function App() {
                 </ul>
             </>
             :
-            <>  
-                { selectedCard != null ?
-                <>
-                    {
-                        <Card item={textData.find((item) => item.id == selectedCard)} handleCardSelect={handleCardSelect} /> 
-                    }
-                </>
-                :
-                <>
-                    {    
-                    textData.map((item, index) => (
-                        <Card item={item} key={index} handleCardSelect={handleCardSelect} selectedCard={selectedCard} />
-                    ))
-                    }
-                </>
+            <div>  
+                {    
+                textData.map((item, index) => (
+                    <Card item={item} key={index} />
+                ))
                 }
-            </>
+
+            </div>
             }
         </div>
     );

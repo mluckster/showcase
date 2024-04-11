@@ -1,0 +1,21 @@
+.App{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin: 5vh 30vw 0 30vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.App::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: 
+        repeating-linear-gradient(0deg, transparent, transparent 3.9vh, rgba(0, 0, 0, 0.1) 4vh, rgba(0, 0, 0, 0.1) 4.1vh),
+        repeating-linear-gradient(90deg, transparent, transparent 3.9vh, rgba(0, 0, 0, 0.1) 4vh, rgba(0, 0, 0, 0.1) 4.1vh);
+}

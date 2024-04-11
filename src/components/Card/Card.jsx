@@ -1,26 +1,20 @@
 import { useState } from 'react'
 import './Card.css'
 
-export default function Card ({ item, handleCardSelect, selectedCard }) {
+export default function Card ({ item }) {
     const [expand, setExpand] = useState(false)
-
-    function handleClick(e) {
-        console.log(selectedCard, 'selectedCard')
-        // handleExpand()
-        handleCardSelect(e.target.parentElement.id)
-    }
 
     function handleExpand(e){
         setExpand(!expand)
     }
 
     return (
-        <div onClick={handleClick} id={item.id}>
+        <div onClick={handleExpand} id={item.id} className='projects'>
             <div className='title'>
                 { item.title }
             </div>
 
-            { selectedCard ? (
+            { expand ? (
             <>
                 <div className='description'>{ item.technology }</div>
                 <div className='description'>{ item.description }</div>
