@@ -9,7 +9,7 @@ export default function Card ({ item }) {
     }
 
     return (
-        <div onClick={handleExpand} id={item.id} className='projects'>
+        <div onClick={handleExpand} id={item.id} className={ `projects ${expand ? 'expanded' : ''}` }>
             <div className='title'>
                 { item.title }
             </div>

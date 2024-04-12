@@ -2,7 +2,7 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 40vw;
-    min-height: 4vh;
+    height: 7vh;
     padding: 20px;
     margin: 5px;
     cursor: pointer;
@@ -10,25 +10,24 @@
     border: 2px solid #c2d1ec; /* Border to mimic grid lines */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
-  
+
+.projects.expanded {
+    height: 14vh;
+    border: 1px solid #333;
+}
+
 .projects:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-  
+
 .title {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
-  
+
 .description {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
-}
-  
-  /* Style for expanded card */
-.projects.expanded {
-    height: auto;
-    border: 1px solid #333; /* Change border color when expanded */
 }

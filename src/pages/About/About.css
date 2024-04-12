@@ -1,0 +1,27 @@
+.about-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.about-list li {
+    position: relative;
+    padding-left: 25px; 
+    margin-bottom: 10px; 
+}
+
+.about-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 1px;
+    background-color: #333; 
+    transform: translateY(-50%) rotate(45deg);
+}
