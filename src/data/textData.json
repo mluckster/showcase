@@ -2,15 +2,15 @@
     {
         "id": 1,
         "title": "Minesweeper",
-        "description": "This is the description for Project 1",
         "technology": "Vanilla Javascript",
+        "description": "This is a little project I made coming back from a bit of a break in coding and any development, I haven't made very many game type projects so I wanted to just re-create a simple game which already exists. This was pretty good ",
         "image": ""
     },
     {
         "id": 2,
         "title": "Second Project",
-        "description": "Description for project 2",
         "technology": "Django Full Stack, APIs",
+        "description": "Description for project 2",
         "image": ""
     }
 ]
