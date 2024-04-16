@@ -16,8 +16,8 @@
     height: 100%;
     z-index: -1;
     background-image: 
-        repeating-linear-gradient(0deg, transparent, transparent 3.9vh, rgba(0, 0, 0, 0.1) 4vh, rgba(0, 0, 0, 0.1) 4.1vh),
-        repeating-linear-gradient(90deg, transparent, transparent 3.9vh, rgba(0, 0, 0, 0.1) 4vh, rgba(0, 0, 0, 0.1) 4.1vh);
+        repeating-linear-gradient(0deg, transparent, transparent 3.9vh, rgba(32, 18, 193, 0.1) 4vh, rgba(32, 18, 193, 0.1) 4.1vh),
+        repeating-linear-gradient(90deg, transparent, transparent 3.9vh, rgba(32, 18, 193, 0.1) 4vh, rgba(32, 18, 193, 0.1) 4.1vh);
 }
 
 .container{

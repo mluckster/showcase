@@ -6,9 +6,9 @@
     padding: 20px;
     margin: 5px;
     cursor: pointer;
-    transition: all 1s ease;
-    border: 2px solid #c2d1ec; /* Border to mimic grid lines */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: all 0.75s ease;
+    border: 2px solid #c2d1ec; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .projects.expanded {
@@ -17,7 +17,7 @@
 }
 
 .projects:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.707);
 }
 
 .title {
@@ -30,4 +30,13 @@
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
+}
+
+.specific{ 
+    opacity: 0;
+    transition: opacity 0.75s ease;
+}
+
+.projects.expanded .specific{
+    opacity: 1;
 }
