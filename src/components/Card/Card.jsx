@@ -13,7 +13,13 @@ export default function Card ({ item }) {
             <div className='title'>
                 { item.title }
             </div>
-            <div className='description'>{ item.technology }</div>
+            <div className='description'>
+                {
+                    item.technology.map((tech, index) => (
+                        <img key={index} src={require(`../../data/${tech}`)} alt={tech} />
+                    ))
+                }
+            </div>
             <div className='description specific'>{ item.description }</div>
         </div>
     )
