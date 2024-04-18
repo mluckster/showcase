@@ -6,12 +6,12 @@ body {
     overflow-x: hidden;
 }
 
-/* Track */
 ::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
+    width: 8px;
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
-    background: #00089e; /* Color of the scrollbar handle */
+    background: #0008aa80;
+    border-radius: 4px;
 }

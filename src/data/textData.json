@@ -2,30 +2,41 @@
     {
         "id": 1,
         "title": "Minesweeper",
-        "technology": ["HTML", "Javascript", "CSS"],
-        "description": "This is a little project I made coming back from a bit of a break in coding and any development, I haven't made very many game type projects so I wanted to just re-create a simple game which already exists. This was pretty good ",
-        "image": ""
+        "technology": [
+            "HTML", "Javascript", "CSS"
+            ],
+        "description": [
+            "This is a little project I made coming back from a bit of a break in coding and developing projects. This was the first thing I created when I decided to begin adding more projects to my software portfolio. I made this with simple logic and generally it was pretty straightforward, it still let me dive into how the game of minesweeper actually works, namely the mine generation on the game board.", 
+            "Some versions of minesweeper generate the mines and have an solver continuously solving the game to make sure that logic can solve the entire grid, if it’s not possible, the mine locations are adjusted and this process repeats until the solver can successfully complete the game. I decided against this approach since I thought I'd be spending a bit too much time on a simple project that doesn’t have a backend or any new tech to further my knowledge. Instead I opted for a simple randomly generated set of mines. The only thing I would make sure of is that the first square that is clicked will not have any mines in the surrounding nine squares which is a very standard. Because of the mine generation method, some guessing may be required to solve the board. I was able to add in two different size grids for a difficulty selection. Overall I'm generally quite happy with how this turned out in a short period of time.", 
+            "Next, I’m thinking of moving on to a full stack react app, to refresh and add to my abilities, with an addition of an extra bit of tech to use within the app (haven’t decided on what that is yet though)."
+            ],
+        "image": "",
+        "ghLink": "https://github.com/mluckster/minesweeper",
+        "liveLink": "https://michaellucky.me/minesweeper/"
     },
     {
         "id": 2,
         "title": "Second Project",
         "technology": ["CSS"],
-        "description": "Description for project 2",
+        "description": ["Description for project 2"],
         "image": ""
     },
     {
         "id": 3,
         "title": "Pokémon Capture App",
-        "technology": ["Javascript", "NodeJs"]
+        "technology": ["Javascript", "NodeJs"],
+        "description": []
     },
     {
         "id": 4,
         "title": "Pokémon Capture App",
-        "technology": ["React", "NodeJs"]
+        "technology": ["React", "NodeJs"],
+        "description": []
     },
     {
         "id": 5,
         "title": "Pokémon Capture App",
-        "technology": ["React", "NodeJs"]
+        "technology": ["React", "NodeJs"],
+        "description": []
     }
 ]

@@ -1,7 +1,7 @@
 .projects {
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 40vw;
+    width: 50vw;
     max-height: 7vh;
     padding: 20px;
     margin: 5px;
@@ -13,12 +13,7 @@
 }
 
 .projects.expanded  {
-    max-height: 22vh;
-    border: 1px solid #333;
-}
-
-#Second.expanded  {
-    max-height: 22vh;
+    max-height: 76vh;
     border: 1px solid #333;
 }
 
@@ -38,6 +33,13 @@
     margin-bottom: 10px;
     opacity: 0;
     transition: opacity 0.85s ease 0.3s;
+    display:flex;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+
+.links{
+    display: flex;
 }
 
 .projects.expanded .description{

@@ -8,6 +8,10 @@ export default function Card ({ item }) {
         setExpand(!expand)
     }
 
+    function handleLink(url){
+        window.open(url, '_blank')
+    }
+
 
     // item.title.split(/\s+/)[0] returns only the first word in the title string and sets as ID (line 15)
 
@@ -26,7 +30,17 @@ export default function Card ({ item }) {
                     ))
                 }
             </div>
-            <div className='description specific'>{ item.description }</div>
+            <div className='description'>
+                { 
+                    item.description.map((paragraph, index) => (
+                        <div key={index}>{ paragraph }</div>
+                    ))
+                }
+                <div className="links">
+                    <div onClick={ () => handleLink(item.ghLink) }>Git Hub</div>
+                    <div onClick={ () => handleLink(item.liveLink) }>Check it out</div>
+                </div>
+            </div>
         </div>
     )
 }
