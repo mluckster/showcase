@@ -8,8 +8,11 @@ export default function Card ({ item }) {
         setExpand(!expand)
     }
 
+
+    // item.title.split(/\s+/)[0] returns only the first word in the title string and sets as ID (line 15)
+
     return (
-        <div onClick={handleExpand} id={item.title} className={ `projects ${expand ? 'expanded' : ''}` }>
+        <div onClick={handleExpand} id={ item.title.split(/\s+/)[0] } className={ `projects ${expand ? 'expanded' : ''}` }>
             <div className='title'>
                 { item.title }
             </div>

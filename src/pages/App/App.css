@@ -5,6 +5,7 @@
     margin: 5vh 30vw 0 30vw;
     justify-content: center;
     align-items: center;
+    width: 40vw;
 }
 
 .App::before {

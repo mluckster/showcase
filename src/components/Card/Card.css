@@ -6,13 +6,18 @@
     padding: 20px;
     margin: 5px;
     cursor: pointer;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.75s ease;
     border: 2px solid #c2d1ec; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
-#Minesweeper.expanded  {
+.projects.expanded  {
+    max-height: 22vh;
+    border: 1px solid #333;
+}
+
+#Second.expanded  {
     max-height: 22vh;
     border: 1px solid #333;
 }
