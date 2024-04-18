@@ -2,18 +2,18 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 40vw;
-    height: 7vh;
+    max-height: 7vh;
     padding: 20px;
     margin: 5px;
     cursor: pointer;
-    transition: height 0.75s ease;
+    transition: max-height 0.5s ease;
     border: 2px solid #c2d1ec; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
-.projects.expanded {
-    height: 14vh;
+#Minesweeper.expanded  {
+    max-height: 22vh;
     border: 1px solid #333;
 }
 
@@ -31,13 +31,34 @@
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
-}
-
-.specific{ 
     opacity: 0;
-    transition: opacity 0.75s ease;
+    transition: opacity 0.85s ease 0.3s;
 }
 
-.projects.expanded .specific{
+.projects.expanded .description{
     opacity: 1;
+}
+
+.tech > img{
+    height: 3vh;
+}
+
+.tech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3vw;
+    padding: 3px;
+}
+
+.tech:hover{
+    background-color: rgba(72, 72, 72, 0.311);
+    border-radius: 3px;
+}
+
+.box{
+    display: flex;
+    gap: 2vw;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
 }

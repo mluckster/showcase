@@ -2,30 +2,30 @@
     {
         "id": 1,
         "title": "Minesweeper",
-        "technology": ["html-logo.png"],
+        "technology": ["HTML", "Javascript", "CSS"],
         "description": "This is a little project I made coming back from a bit of a break in coding and any development, I haven't made very many game type projects so I wanted to just re-create a simple game which already exists. This was pretty good ",
         "image": ""
     },
     {
         "id": 2,
         "title": "Second Project",
-        "technology": ["css-logo.png"],
+        "technology": ["CSS"],
         "description": "Description for project 2",
         "image": ""
     },
     {
         "id": 3,
         "title": "Pokémon Capture App",
-        "technology": ["js-logo.png", "node-logo.png"]
+        "technology": ["Javascript", "NodeJs"]
     },
     {
         "id": 4,
         "title": "Pokémon Capture App",
-        "technology": ["react-logo.png", "node-logo.png"]
+        "technology": ["React", "NodeJs"]
     },
     {
         "id": 5,
         "title": "Pokémon Capture App",
-        "technology": ["react-logo.png", "node-logo.png"]
+        "technology": ["React", "NodeJs"]
     }
 ]

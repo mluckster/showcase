@@ -5,9 +5,9 @@ export default function Main() {
     return (
         <>
             {    
-            textData.map((item, index) => (
-                <Card item={item} key={index} />
-            ))
+                textData.map((item, index) => (
+                    <Card item={item} key={index} />
+                ))
             }
         </>
     )

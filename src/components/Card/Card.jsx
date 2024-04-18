@@ -9,14 +9,17 @@ export default function Card ({ item }) {
     }
 
     return (
-        <div onClick={handleExpand} id={item.id} className={ `projects ${expand ? 'expanded' : ''}` }>
+        <div onClick={handleExpand} id={item.title} className={ `projects ${expand ? 'expanded' : ''}` }>
             <div className='title'>
                 { item.title }
             </div>
-            <div className='description'>
+            <div className='box'>
                 {
                     item.technology.map((tech, index) => (
-                        <img key={index} src={require(`../../data/${tech}`)} alt={tech} />
+                        <div className="tech">
+                            <img key={index} src={require(`../../data/${tech}-logo.png`)} alt={tech} />
+                            { tech }
+                        </div>
                     ))
                 }
             </div>
