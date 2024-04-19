@@ -1,42 +1,95 @@
 [
     {
-        "id": 1,
+        "id": 7,
         "title": "Minesweeper",
         "technology": [
             "HTML", "Javascript", "CSS"
             ],
         "description": [
-            "This is a little project I made coming back from a bit of a break in coding and developing projects. This was the first thing I created when I decided to begin adding more projects to my software portfolio. I made this with simple logic and generally it was pretty straightforward, it still let me dive into how the game of minesweeper actually works, namely the mine generation on the game board.", 
-            "Some versions of minesweeper generate the mines and have an solver continuously solving the game to make sure that logic can solve the entire grid, if it’s not possible, the mine locations are adjusted and this process repeats until the solver can successfully complete the game. I decided against this approach since I thought I'd be spending a bit too much time on a simple project that doesn’t have a backend or any new tech to further my knowledge. Instead I opted for a simple randomly generated set of mines. The only thing I would make sure of is that the first square that is clicked will not have any mines in the surrounding nine squares which is a very standard. Because of the mine generation method, some guessing may be required to solve the board. I was able to add in two different size grids for a difficulty selection. Overall I'm generally quite happy with how this turned out in a short period of time.", 
-            "Next, I’m thinking of moving on to a full stack react app, to refresh and add to my abilities, with an addition of an extra bit of tech to use within the app (haven’t decided on what that is yet though)."
+            "This is a small project I created after taking a break from coding and developing projects. It was the first thing I built when I decided to expand my software portfolio. I approached it with simple logic, focusing on understanding the workings of the game of Minesweeper, especially the mine generation on the game board.",
+            "Some versions of Minesweeper employ a solver continuously solving the game to ensure that logic can solve the entire grid. If it's not possible, the mine locations are adjusted, and this process repeats until the solver can successfully complete the game. However, I chose not to use this approach since I felt it would consume too much time for a project without backend or new technologies to enhance my skills. Instead, I opted for a simple randomly generated set of mines. The only precaution I took was to ensure that the first square clicked would not have any mines in the surrounding nine squares, which is standard practice. Due to the random mine generation method, some guessing may be necessary to solve the board. I also implemented two different grid sizes for varying difficulty levels. Overall, I'm quite satisfied with how it turned out in a short period.",
+            "Next, I'm considering working on a full-stack React app to refresh and enhance my abilities, possibly incorporating new technologies (though I haven't decided on which ones yet)."
             ],
         "image": "",
         "ghLink": "https://github.com/mluckster/minesweeper",
         "liveLink": "https://michaellucky.me/minesweeper/"
     },
     {
-        "id": 2,
-        "title": "Second Project",
-        "technology": ["CSS"],
-        "description": ["Description for project 2"],
-        "image": ""
-    },
-    {
-        "id": 3,
-        "title": "Pokémon Capture App",
-        "technology": ["Javascript", "NodeJs"],
-        "description": []
-    },
-    {
-        "id": 4,
-        "title": "Pokémon Capture App",
-        "technology": ["React", "NodeJs"],
-        "description": []
+        "id": 6,
+        "title": "Stroke Rate Watch",
+        "technology": [
+            "HTML", "Javascript", "CSS"
+            ],
+        "description": ["I decided to create this app one day when I was searching for applications on the Google Play Store that could measure the frequency of a repetitive movement, useful for sports like rowing or paddling. Although I wanted it for coaching in paddle sport, I couldn't find a simple solution, so I developed a basic app that is responsive and easily usable on my phone."],
+        "image": "",
+        "ghLink": "https://github.com/mluckster/stroke-rate",
+        "liveLink": "https://michaellucky.me/stroke-rate/"
     },
     {
         "id": 5,
-        "title": "Pokémon Capture App",
-        "technology": ["React", "NodeJs"],
-        "description": []
+        "title": "V1 Portfolio Site",
+        "technology": [
+            "HTML", "Javascript", "CSS"
+            ],
+        "description": ["This is the initial version of my portfolio site, where I aimed for a somewhat bold and stylish CSS design. I learned a lot during this project, especially about manipulating CSS using the DOM in drastic ways. While it was enjoyable to work on, I later decided to create a much simpler site to showcase my portfolio (see the about section for the current version)."],
+        "image": "",
+        "ghLink": "",
+        "liveLink": ""
+    },
+    {
+        "id": 4,
+        "title": "Pokémon Collector App",
+        "technology": [
+            "React", "NodeJs"
+            ],
+        "description": [
+            "This was my final project in my software engineering boot camp. We had a lot of freedom in choosing the project and could work solo or in a group, needing only three or four CRUD capabilities. I collaborated with another person to create an app centered around Pokemon, leveraging the robustness of the PokeAPI. We developed a concept where users could collect random Pokemon and compare their collections with others on the app.",
+            "We used a simple method to randomly generate Pokemon, with each having unique characteristics, including four random attacks, a random special ability, shiny status, and random numerical stats. Building this app was very rewarding, and I was pleased with its functionality."
+        ],
+        "image": "",
+        "ghLink": "https://github.com/mluckster/poke-clicker",
+        "liveLink": "https://poke-clicker.herokuapp.com/"
+    },
+    {
+        "id": 3,
+        "title": "Social Video Game List Site",
+        "technology": [
+            "Django", "Python"
+            ],
+        "description": [
+            "This was also another app I built in a group from my 2023 bootcamp using django and a postgreSQL database. The idea for this was made as a sort of letterboxd but for video games. On letterboxd you are able to make a labeled list of films such as top films from the 80’s or best comedies of all time, then share that list of films with friends. This app allows you to do this for video games.",
+            "We used class based views and a lot of built in django features for working with CRUD on the database. The differentiating feature for this was the search bar and the gaming API integrated into the project. With this, you can search keywords which would send a request to a third party database and matching games would appear in the search. You would then be able to add the games from the search into whatever list you’ve decided to create, those games and various info about the games would be added to the app’s backend database to reduce the number of API requests we would need to use.",
+            "I was pretty happy with this project since it actually felt fun to be able to search up games and compare them with other classmates who tried out the app."
+        ],
+        "image": "",
+        "ghLink": "https://github.com/mluckster/GMRD",
+        "liveLink": ""
+    },
+    {
+        "id": 2,
+        "title": "Bare Bones Fitness App",
+        "technology": [
+            "NodeJs", "Javascript"
+            ],
+        "description": [
+            "This was my first full-stack app also developed during my boot camp. It allows users to create workouts, though I wasn't entirely satisfied with it as I didn't go beyond the basic requirements. I plan to revisit this idea and remake it in React, expanding its features significantly. Looking back, I think integrating an exercise library via a free API would have greatly improved the project."
+        ],
+        "image": "",
+        "ghLink": "https://github.com/mluckster/fitness-app",
+        "liveLink": ""
+    },
+    {
+        "id": 1,
+        "title": "Simon Game",
+        "technology": [
+            "HTML", "Javascript", "CSS"
+            ],
+        "description": [
+            "This was the first project in my bootcamp, it was just a basic simon-says style game. When the buttons light up, you click them in the correct order until you win. I had to re-do the logic to the game at first since I had totally over-thought the project and realized a much much easier way to design the game. Once I had the game logic down and win and lose conditions working, I added some difficulty modifiers with the speed of the buttons and another which creates a new pattern to follow with each successful level passed. ",
+            "Overall the modifiers made me much more happy with how the game turned out despite it being quite simple."
+        ],
+        "image": "",
+        "ghLink": "https://github.com/mluckster/Cybersays-Game",
+        "liveLink": ""
     }
 ]

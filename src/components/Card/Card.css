@@ -1,20 +1,21 @@
 .projects {
-    border: 1px solid #ccc;
     border-radius: 8px;
     width: 50vw;
     max-height: 7vh;
     padding: 20px;
     margin: 5px;
     cursor: pointer;
-    transition: max-height 0.75s ease;
-    border: 2px solid #c2d1ec; 
+    transition: all 1s ease;
+    border: 2px solid #6681b3;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
 .projects.expanded  {
+    background-color: rgba(6, 0, 171, 0.171);
     max-height: 76vh;
     border: 1px solid #333;
+    cursor: auto;
 }
 
 .projects:hover {
