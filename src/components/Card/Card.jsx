@@ -1,24 +1,37 @@
 import { useState } from 'react'
 import './Card.css'
+import arrow from '../../data/arrow.png'
+import GHlogo from '../../data/GHlogo.png'
+import newPNG from '../../data/new.png'
 
 export default function Card ({ item }) {
     const [expand, setExpand] = useState(false)
 
-    function handleExpand(e){
-        setExpand(!expand)
+    function handleExpand(){
+        setExpand(true)
     }
 
     function handleLink(url){
         window.open(url, '_blank')
     }
 
+    function handleCollapse(e) {
+        e.stopPropagation()
+        setExpand(false)
+    }
 
-    // item.title.split(/\s+/)[0] returns only the first word in the title string and sets as ID (line 15)
-
+    // item.title.split(/\s+/)[0] returns only the first word in the title string and sets as ID
     return (
         <div onClick={handleExpand} id={ item.title.split(/\s+/)[0] } className={ `projects ${expand ? 'expanded' : ''}` }>
-            <div className='title'>
-                { item.title }
+            <div className="top">
+                <div className='title'>{ item.title }</div>
+                { expand && (
+                    <div onClick={handleCollapse} className='collapse'>
+                        <div>collapse</div>
+                        <img src={arrow} alt="" />
+
+                    </div>
+                )}
             </div>
             <div className='box'>
                 {
@@ -37,8 +50,14 @@ export default function Card ({ item }) {
                     ))
                 }
                 <div className="links">
-                    <div onClick={ () => handleLink(item.ghLink) }>Git Hub</div>
-                    <div onClick={ () => handleLink(item.liveLink) }>Check it out</div>
+                    <div onClick={ () => handleLink(item.ghLink) } className='external'>
+                        <div>GitHub</div>
+                        <img src={ GHlogo } alt="" />
+                    </div>
+                    <div onClick={ () => handleLink(item.liveLink) } className='external'>
+                        <div>Check it out</div>
+                        <img src={ newPNG } alt="" />
+                    </div>
                 </div>
             </div>
         </div>
