@@ -12,7 +12,7 @@
 }
 
 .projects.expanded  {
-    background-color: rgba(6, 0, 171, 0.171);
+    background-color: rgba(158, 158, 158, 0.339);
     max-height: 76vh;
     border: 1px solid #333;
     cursor: auto;
@@ -37,6 +37,7 @@
 }
 
 .collapse{
+    font-size: smaller;
     padding: 1vh 3vw 1vh 3vw;
     height: 3vh;
     display:flex;
@@ -51,7 +52,7 @@
 
 .collapse:not([hidden]):hover {
     background-color: #8ca1cb81;
-    border-radius: 20%;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -68,15 +69,24 @@
 
 .links{
     display: flex;
+    gap: 2vw;
+}
+
+.external{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 5px;
 }
 
 .external > img{
-    width: 3vw;
+    width: 2vw;
 }
 
 .external:hover{
     background-color: #8ca1cb81;
-    border-radius: 20%;
+    border-radius: 10px;
     cursor: pointer;
 }
 
