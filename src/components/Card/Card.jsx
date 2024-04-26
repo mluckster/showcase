@@ -27,7 +27,7 @@ export default function Card ({ item }) {
                 <div className='title'>{ item.title }</div>
                 { expand && (
                     <div onClick={handleCollapse} className='collapse'>
-                        <div>collapse</div>
+                        <div>show less</div>
                         <img src={arrow} alt="" />
 
                     </div>
