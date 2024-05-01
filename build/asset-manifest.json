@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f447df3.css",
-    "main.js": "/static/js/main.14fbf32c.js",
-    "static/media/React-logo.png": "/static/media/React-logo.8a6fc0a24a800d1e0f4a.png",
-    "static/media/Python-logo.png": "/static/media/Python-logo.d6d53b65aebc74ad8376.png",
-    "static/media/linkedin-logo.png": "/static/media/linkedin-logo.0e87d12b1f4f20230d78.png",
-    "static/media/Django-logo.png": "/static/media/Django-logo.e2d0ed2e07fbbc1c4dd9.png",
-    "static/media/CSS-logo.png": "/static/media/CSS-logo.a7404c907af61dffc7c9.png",
-    "static/media/NodeJs-logo.png": "/static/media/NodeJs-logo.e328955d6bbbf3ebc72b.png",
-    "static/media/HTML-logo.png": "/static/media/HTML-logo.3d763e66a60e65661792.png",
-    "static/media/GHlogo.png": "/static/media/GHlogo.c8c0b4acf5459021baf2.png",
-    "static/media/Javascript-logo.png": "/static/media/Javascript-logo.c23168f6cfacbb45a310.png",
-    "index.html": "/index.html",
-    "main.2f447df3.css.map": "/static/css/main.2f447df3.css.map",
-    "main.14fbf32c.js.map": "/static/js/main.14fbf32c.js.map"
+    "main.css": "/showcase/static/css/main.2f447df3.css",
+    "main.js": "/showcase/static/js/main.9381a3f5.js",
+    "static/media/React-logo.png": "/showcase/static/media/React-logo.8a6fc0a24a800d1e0f4a.png",
+    "static/media/Python-logo.png": "/showcase/static/media/Python-logo.d6d53b65aebc74ad8376.png",
+    "static/media/linkedin-logo.png": "/showcase/static/media/linkedin-logo.0e87d12b1f4f20230d78.png",
+    "static/media/Django-logo.png": "/showcase/static/media/Django-logo.e2d0ed2e07fbbc1c4dd9.png",
+    "static/media/CSS-logo.png": "/showcase/static/media/CSS-logo.a7404c907af61dffc7c9.png",
+    "static/media/NodeJs-logo.png": "/showcase/static/media/NodeJs-logo.e328955d6bbbf3ebc72b.png",
+    "static/media/HTML-logo.png": "/showcase/static/media/HTML-logo.3d763e66a60e65661792.png",
+    "static/media/GHlogo.png": "/showcase/static/media/GHlogo.c8c0b4acf5459021baf2.png",
+    "static/media/Javascript-logo.png": "/showcase/static/media/Javascript-logo.c23168f6cfacbb45a310.png",
+    "index.html": "/showcase/index.html",
+    "main.2f447df3.css.map": "/showcase/static/css/main.2f447df3.css.map",
+    "main.9381a3f5.js.map": "/showcase/static/js/main.9381a3f5.js.map"
   },
   "entrypoints": [
     "static/css/main.2f447df3.css",
-    "static/js/main.14fbf32c.js"
+    "static/js/main.9381a3f5.js"
   ]
 }
