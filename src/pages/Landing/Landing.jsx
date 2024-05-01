@@ -9,10 +9,13 @@ export default function Landing({ setLanding, landing }){
         <>
             <div className="landing">
                 <div>
-                    Welcome to my Project Blog.
+                    My name is Michael Lucky
                 </div>
                 <div>
-                    In the process of my job search, i'm planning to update here on any new things that I make. Each post will be accompanied with a small blurb based on what I learned from the development process, any challenges, what I would want to try differently, or anything along those lines.
+                    Welcome to my Project Blog
+                </div>
+                <div>
+                    I will be making posts on this site for any new projects I create in my quest to find full time employment in the software development space. Each post will be accompanied with a small blurb based on what I learned from the development process, any challenges, what I would want to try differently, or anything along those lines.
                 </div>
                 <div>Enter the site to check things out!</div>
             </div>
