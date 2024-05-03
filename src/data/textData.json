@@ -20,7 +20,7 @@
         "technology": [
             "HTML", "Javascript", "CSS"
             ],
-        "description": ["I decided to create this app one day when I was searching for applications on the Google Play Store that could measure the frequency of a repetitive movement, useful for sports like rowing or paddling. Although I wanted it for coaching in paddle sport, I couldn't find a simple solution, so I developed a basic app that is responsive and easily usable on my phone."],
+        "description": ["I decided to create this app one day when I was searching for applications on the Google Play Store that could measure stroke rates in sports like paddling or rowing. I wanted it for coaching in dragon boat, I couldn't find a simple solution that existed already, so I built a basic app that is responsive and easily usable on my phone, it's EXTREMELY basic but it's all I really wanted and works fine on my phone."],
         "image": "",
         "ghLink": "https://github.com/mluckster/stroke-rate",
         "liveLink": "https://michaellucky.me/stroke-rate/"
@@ -31,7 +31,7 @@
         "technology": [
             "HTML", "Javascript", "CSS"
             ],
-        "description": ["This is the initial version of my portfolio site, where I aimed for a somewhat bold and stylish CSS design. I learned a lot during this project, especially about manipulating CSS using the DOM in drastic ways. While it was enjoyable to work on, I later decided to create a much simpler site to showcase my portfolio (see the about section for the current version)."],
+        "description": ["This is the initial version of my portfolio site, where I aimed for a somewhat bold and stylish CSS design. I learned a lot during this project, especially about manipulating CSS using the DOM in drastic ways. While it was enjoyable to work on and i'm happy with how flashy it looks, I later decided to create a much simpler site to showcase my portfolio which also works better on different sized monitors."],
         "image": "",
         "ghLink": "",
         "liveLink": ""
@@ -43,7 +43,7 @@
             "React", "NodeJs"
             ],
         "description": [
-            "This was my final project in my software engineering boot camp. We had a lot of freedom in choosing the project and could work solo or in a group, needing only three or four CRUD capabilities. I collaborated with another person to create an app centered around Pokemon, leveraging the robustness of the PokeAPI. We developed a concept where users could collect random Pokemon and compare their collections with others on the app.",
+            "This was my final project in my software engineering boot camp. We had a lot of freedom in choosing the project and could work solo or in a group, the only requirement was three of four CRUD capabilities. I collaborated with another person to create an app centered around Pokemon, leveraging the robustness of the PokeAPI. We developed a concept where users could collect random Pokemon and compare their collections with others on the app.",
             "We used a simple method to randomly generate Pokemon, with each having unique characteristics, including four random attacks, a random special ability, shiny status, and random numerical stats. Building this app was very rewarding, and I was pleased with its functionality."
         ],
         "image": "",
